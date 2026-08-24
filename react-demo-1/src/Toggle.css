@@ -1,0 +1,103 @@
+.toggle {
+    width: 60px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    padding: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.circle {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: rgb(208, 22, 22);
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+/* OFF */
+.off {
+    background-color: rgb(189, 162, 26);
+}
+
+.off .circle {
+    transform: translateX(0);
+}
+
+/* ON */
+.on {
+    background-color: green;
+}
+
+.on .circle {
+    transform: translateX(30px);
+}
+
+.container {
+
+    margin-top: 1.5rem;
+    box-shadow: rgb(122, 22, 22);
+    /* background-color: aquamarine; */
+    padding: .5rem;
+    border-radius: 5rem;
+    /* animation: disco 10s timing-function delay iteration-count direction fill-mode; */
+    animation-name: disco;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    width: fit-content;
+
+}
+
+.container-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+
+button :hover {
+
+    background-color: rgb(194, 187, 187);
+
+}
+
+
+
+@keyframes disco {
+    0% {
+        background-color: rgb(237, 6, 6);
+        box-shadow: 0 0 60px 20px #ff00ff;
+    }
+
+    20% {
+        background-color: rgb(10, 221, 221);
+        box-shadow: 0 0 60px 20px rgba(206, 13, 109, 0.839);
+    }
+
+    40% {
+        background-color: green;
+        box-shadow: 0 0 60px 20px green;
+    }
+
+    60% {
+        background-color: rgb(137, 20, 39);
+        box-shadow: 0 0 60px 20px orange;
+    }
+
+    80% {
+        background-color: rgb(227, 227, 13);
+        box-shadow: 0 0 60px 20px slateblue;
+    }
+
+
+    100% {
+        background-color: rgb(20, 6, 114);
+        box-shadow: 0 0 60px 20px black;
+
+    }
+
+}
