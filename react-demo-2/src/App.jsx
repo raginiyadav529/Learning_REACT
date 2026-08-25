@@ -27,13 +27,16 @@ function App() {
 
   return (
     <>
-      <h1>Hello !</h1>
+      <h1>Hello ! ❤️</h1>
+      
+      <h2>Keep Learning & Growing! ❤️</h2>
       <h2>Counter value : {counter}</h2>
       <p>
         <button className="increase" onClick={addValue}>
           Add Value :{counter}
         </button>
         <br />
+        
         <button className="decrease" onClick={removeValue}>
           Remove Value :{counter}</button>
       </p>
