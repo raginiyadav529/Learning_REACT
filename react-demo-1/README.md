@@ -15,8 +15,6 @@ The React Compiler is not enabled on this template because of its impact on dev 
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
-  
-
 # React Demo 1 — React Learning (Day 1)
 
 This is my **Day 1 React.js learning project**.
@@ -28,29 +26,61 @@ For this first project, I created a simple page that displays text using an `<h1
 
 During Day 1, I learned:
 
-* What React.js is
-* How to create a React project using Vite
-* How to create a React application using JavaScript
-* Basic React project structure
-* How `npm` is used in a React project
-* How to install project dependencies using `npm install`
-* How to start the React development server using `npm run dev`
-* How the React application runs locally in the browser
-* Basic understanding of React components
-* How to display content using JSX
-* Basic use of an `<h1>` element in JSX(JavaScript XML.)
-* Basic understanding of `package.json`
-* The purpose of `node_modules`
+- What React.js is
+- How to create a React project using Vite
+- How to create a React application using JavaScript
+- Basic React project structure
+- How `npm` is used in a React project
+- How to install project dependencies using `npm install`
+- How to start the React development server using `npm run dev`
+- How the React application runs locally in the browser
+- Basic understanding of React components
+- How to display content using JSX
+- Basic use of an `<h1>` element in JSX(JavaScript XML.)
+- Basic understanding of `package.json`
+- The purpose of `node_modules`
+
+## About Toggle Button ******\*\*\*******
+
+## 1. Toggle Concept
+
+I learned how to create ON/OFF behavior using state.
+
+const [isOn, setIsOn] = useState(false);
+
+And:
+
+setIsOn(!isOn);
+
+The ! changes the current value to its opposite:
+
+false → true
+true → false
+
+This helped me understand how React can control UI behavior based on state.
+
+## 2. Conditional Styling
+
+I learned how to change CSS classes according to the state.
+
+className={`toggle ${isOn ? "on" : "off"}`}
+
+This means:
+
+isOn = true → on
+isOn = false → off
+
+I also used CSS transitions to make the UI changes smoother.
 
 ## 🛠️ Technologies Used
 
-* React.js
-* Vite
-* JavaScript
-* HTML / JSX
-* CSS
-* npm
-* VS Code
+- React.js
+- Vite
+- JavaScript
+- HTML / JSX
+- CSS
+- npm
+- VS Code
 
 ## 💻 Project Setup
 
