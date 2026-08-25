@@ -21,14 +21,14 @@ I learned that `useState` is used when a component needs to **remember a value t
 Example:
 
 ```jsx
-const [counter, setCounter] = useState(0);
+let [counter, setCounter] = useState(10);
 ```
 
 Here:
 
-* `counter` → stores the current value.
-* `setCounter` → updates the value.
-* `0` → initial value.
+* `counter` → stores the current value. what value to update 
+* `setCounter` → updates the value. method through which counter is updated.
+* `10` → initial value.
 
 I also learned that the two values inside `[]` are obtained using **array destructuring**.
 
@@ -93,7 +93,7 @@ I implemented the concepts I learned in my Day 2 React project.
 I created a counter that increases when the button is clicked.
 
 ```jsx
-const [counter, setCounter] = useState(0);
+let [counter, setCounter] = useState(10);
 ```
 
 I used an event handler to update the counter.
@@ -109,8 +109,6 @@ I practiced:
 * `background-color`
 * `border-radius`
 * `transform`
-* `transition`
-* Creating smaller containers using `width`
 
 ---
 
