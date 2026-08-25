@@ -1,0 +1,19 @@
+.increase:hover{
+
+  background-color:rgb(160, 56, 56) ;
+ 
+}
+
+.decrease:hover{
+  background-color:rgb(37, 195, 85) ;
+  
+}
+
+button{
+  padding: .5rem;
+  margin: 1rem;
+  border-color: var(--accent-border);
+  border-radius: .5rem;
+  background: var(--accent-bg);
+  transition: border-color 0.3s;
+}
