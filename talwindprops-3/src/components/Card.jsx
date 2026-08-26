@@ -1,9 +1,8 @@
+export default function HeroFeatures({ username, btnText = "Get Started" }) {
+  // we  used props here to pass data from parent component to child component
 
-
-export default function HeroFeatures({username, btnText="Get Started"}) { // we can use props here to pass data from parent component to child component
-  
-  console.log("Username from props:", username); 
-  console.log("Button text from props:", btnText); 
+  console.log("Username from props:", username);
+  console.log("Button text from props:", btnText);
   const features = [
     {
       icon: "🚀",
@@ -63,7 +62,7 @@ export default function HeroFeatures({username, btnText="Get Started"}) { // we 
               Start Your Free Trial
             </button>
             <button className="px-8 py-4 bg-white dark:bg-zinc-800 border border-gray-300 dark:border-zinc-700 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-zinc-700 font-semibold rounded-lg transition-colors duration-200">
-            {btnText}
+              {btnText}
             </button>
           </div>
         </div>
@@ -112,4 +111,3 @@ export default function HeroFeatures({username, btnText="Get Started"}) { // we 
     </section>
   );
 }
-
